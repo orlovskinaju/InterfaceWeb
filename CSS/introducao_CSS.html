@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Título da página</title> <!-- fica na guia do google -->
+        <meta charset="UTF-8"> <!-- manter funcionando a acentuação -->
+        <style>/*CSS interno*/
+            .paragrafos{
+                background-color: blue;
+                color: white;
+                font-size: 25pt;
+            }
+            #paragrafo_especial{
+                color: red;
+                font-weight: bold;
+            }
+            /*Não usar o mesmo id em duas coisas*/
+         
+            /*Para fazer dentro do style e no arquivo separado
+            SELETOR{
+            propiedades:valor;
+            }   */
+        </style>
+    </head>
+    <body>
+        <!--<p style="color:red; font-size: 35pt">Texto</p>
+        <p> TEXTO </p>-->
+        <p class="paragrafos" id="paragrafo_especial">Meu primeiro parágrafo</p>
+        <p id="paragrafo_especial">Meu segundo parágrafo</p>
+        <p class="paragrafos">Meu terceiro parágrafo</p>
+        <p id="paragrafo_especial">Meu quarto parágrafo</p>
+    </body>
