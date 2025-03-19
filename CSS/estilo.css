@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(181, 209, 230);
+}
+#titulo1{
+    color: rgb(87, 87, 192);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30xp;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#titulo2{
+    font-size: 70px;
+    font-weight: 100;
+    font-style: italic;
+    text-transform: lowercase;
+    text-align: right;
+}
+
+#titulo3{
+    text-transform: capitalize;
+    text-align: left;
+    background-color: rgb(87, 87, 192);
+}
+
+.paragrafo_normal{
+    text-indent: 40px;
+    text-align: justify;
+    font-size: 18px;
+    color:rgb(75, 89, 109);
+    font-variant: small-caps;
+}
+.paragrafo_normal{
+    text-indent: 40px;
+    text-align: justify;
+    font-size: 18px;
+    color:rgb(44, 72, 112);
+    font-variant: small-caps;
+}
+a{
+    text-decoration: none;
+}
