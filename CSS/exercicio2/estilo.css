@@ -1,0 +1,30 @@
+#titulo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color:#50716C;
+    text-align: center;
+}
+
+.infos{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color:#000000;
+    text-align: center;
+}
+
+.subtitulos{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color:#50716C;
+} 
+
+.infos_gerais{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color:#000000;
+   text-align: left;
+}
+
+#body{
+    background-color: #F1E9E1;
+}
