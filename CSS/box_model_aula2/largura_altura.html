@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalhando largura e altura</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(158, 170, 174);
+            /* height: 800px; aqui não pode ser em porcentagem*/
+        }
+        p{
+            background-color: rgb(157, 209, 168);
+        }
+        h1{
+            background-color: rgb(223, 208, 185);
+           /* padding-top: 20px;
+            padding-right: 30px;
+            padding-bottom: 10px;
+            padding-left: 25px;
+            padding: 20px 30px 10px 25px; */
+            padding: 100px 200px; 
+            outline: 5px dotted rgb(91, 139, 151); /* o outline fica a borda para fora do elemento*/
+            margin-left: auto; /*centraliza o elemento*/
+            margin-right: auto; /*centraliza o elemento*/
+            width: 200px; /*largura em porcentagem = % do elemento pai*/
+            
+        }
+        h2{
+            background-color: rgb(207, 157, 157);
+            width: 50%; /*largura em porcentagem = % do elemento pai*/
+            height: 400px; /* para trabalhar a porcentagem na altura só se o body tiver uma altura limitada*/;
+            padding: 50px;
+            margin: 50px;
+            border-width: 5px;/*largura da margem*/ /* o border fica a borda para dentro do elemento*/
+            border-style: dashed;/*tipo da margem*/
+            border-color: rgb(91, 139, 151);/*cor da margem*/
+            /*border: 5px dashed rgb(91, 139, 151);/*largura, tipo e cor da margem*/
+            border-top: 5px solid rgb(91, 139, 151);
+            border-bottom: 5px solid rgb(91, 139, 151);
+
+        }
+
+        .destaque{
+            background-color: rgb(78, 78, 136);
+            font-size: 24px;
+        }
+
+        .tamanho{
+            width: 400px;
+            height: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Box Model</h1>
+    <h2>Altura e largura</h2>
+    <p class="destaque">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="destaque tamanho">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p class="tamanho">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
