@@ -1,0 +1,57 @@
+#titulo{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color:#50716C;
+    margin-left: 400px;
+}
+
+.infos{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color:#000000;
+    margin-left: 400px;
+}
+
+.subtitulos{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color:#5c938b;
+    border-top: 30px;
+    padding-left: 35px;
+
+} 
+
+.infos_gerais{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color:#000000;
+    text-align: left;
+    padding-left: 30px;
+}
+
+#body{
+    background-image: url(imagens/design-space-paper-textured-background.jpg);
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+.img{
+    float: left;
+    width: 180px;
+    height: 240px;
+    margin-left: 80px;
+
+}
+
+ul li{ 
+    list-style-type: square;
+    list-style-position: inside;
+    
+  }
+  ol li{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+  }
+
+a:link{
+    color:#5c938b;
+}   
