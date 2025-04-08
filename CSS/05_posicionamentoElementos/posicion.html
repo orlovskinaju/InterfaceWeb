@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        #div1{
+            background-color: bisque;
+            padding: 10px;
+            width: 90%;
+            top: 0;
+            position: sticky; 
+        }
+        #div2{
+            background-color: rgb(164, 226, 185);
+            padding: 10px;
+            width: 80%;
+            height: 50px;
+            position: static;
+            left: 100px;
+            bottom: 0px;
+        }
+        #div3{
+            background-color: rgb(147, 172, 255);
+            padding: 10px;
+            width: 30px;
+            height: 30px;
+            position: sticky; 
+            bottom: 100px;
+            right: 100px;
+        }
+
+        /*absolute: tira do fluxo normal, fica em cima de outros elementos, perde a hierarquia*/
+        /*relative:coloca o elemento no fluxo normal, mas permite que os filhos sejam absolutos em relação a ele*/
+        /*fixed: fica fixo na tela, mesmo com scroll, não se mexe, fica em cima de outros elementos*/
+        /*sticky: fica fixo em relação ao elemento pai, mas se mexe com o scroll, fica em cima de outros elementos*/
+        /*static: é o padrão, não se mexe, não tem posição*/    
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <div id="div1">
+        Div 1
+        <div id="div2">
+            Div 2
+            <div id="div3">
+                Div 3
+            </div>
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi eveniet aliquam, animi similique ullam fuga unde sint id obcaecati porro molestiae ut, quaerat reiciendis illo in debitis sunt laudantium accusamus.</p>
+
+
+</body>
+</html>

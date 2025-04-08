@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Content</title>
+    <style>
+        .container{
+            border:2px solid black;
+            padding:16px;
+            width: 450px;
+            margin-bottom: 16px;
+        }
+
+        .item{
+            background-color: bisque;
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+
+        .fit-content .item{ 
+            width: fit-content;
+        }
+
+        
+        .min-content .item{
+            width: min-content;
+        }
+
+        
+        .max-content .item{
+            width: max-contentS;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <!--Fit content pega a largura "normal, max content o tamanho do maior elemento, min pega o menor elemento"-->
+    <div class="container fit-content">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, iste nobis. Deleniti, repellendus consequatur eaque unde dignissimos delectus officiis magni culpa, est iste, modi reiciendis mollitia sed in enim a?
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, voluptate.
+        </div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, architecto voluptate quis illum nemo consequatur nobis commodi natus quaerat vitae.
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet natus ut quidem neque molestias itaque maxime. Necessitatibus et architecto similique dicta quae enim voluptatum, impedit, voluptas ducimus, repellendus tenetur! Enim nemo, laudantium, dolorem ratione officia inventore alias, eaque earum est quod doloremque vitae. Veritatis soluta accusamus itaque ab at.
+        </div>
+    </div>
+        
+    <div class="container min-content">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, iste nobis. Deleniti, repellendus consequatur eaque unde dignissimos delectus officiis magni culpa, est iste, modi reiciendis mollitia sed in enim a?
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, voluptate.
+        </div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, architecto voluptate quis illum nemo consequatur nobis commodi natus quaerat vitae.
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet natus ut quidem neque molestias itaque maxime. Necessitatibus et architecto similique dicta quae enim voluptatum, impedit, voluptas ducimus, repellendus tenetur! Enim nemo, laudantium, dolorem ratione officia inventore alias, eaque earum est quod doloremque vitae. Veritatis soluta accusamus itaque ab at.
+        </div>
+    </div>
+        
+    <div class="container max-content">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, iste nobis. Deleniti, repellendus consequatur eaque unde dignissimos delectus officiis magni culpa, est iste, modi reiciendis mollitia sed in enim a?
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, voluptate.
+        </div>
+        <div class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, architecto voluptate quis illum nemo consequatur nobis commodi natus quaerat vitae.
+        </div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eveniet natus ut quidem neque molestias itaque maxime. Necessitatibus et architecto similique dicta quae enim voluptatum, impedit, voluptas ducimus, repellendus tenetur! Enim nemo, laudantium, dolorem ratione officia inventore alias, eaque earum est quod doloremque vitae. Veritatis soluta accusamus itaque ab at.
+        </div>
+    </div>
+</body>
+</html>

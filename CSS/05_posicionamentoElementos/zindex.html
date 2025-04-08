@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+<head>
+    <meta charset="UTF-8">
+    <title>ZINDEX</title>
+
+    <style>
+        div{
+            border: 3px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: rgb(140, 140, 140);
+            font-size: 20px;
+            width: 60%;
+        }
+        
+        .div2.grupo1{
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: aliceblue;
+        }
+
+        .div2.grupo2{
+            position: absolute;
+            top: 100px;
+            right: 0;
+            background-color: aliceblue;
+        }
+
+        .grupo1{
+            z-index: 2; /*z-index é o nivel de profundidade, quanto maior mais em cima fica*/
+        }
+        .grupo2{
+            z-index: 1;
+        }
+
+        .div3.grupo1{
+            position:relative;
+            background-color: rgb(183, 77, 77);
+            z-index: 4;
+        }
+
+        .div4.grupo1{
+            position:relative;
+            background-color: rgb(154, 207, 105);
+            z-index: 3;
+            bottom: 30px;
+            left:15px;
+    
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1 grupo1">Div1 grupo 1
+        <div class="div2 grupo1">Div2 grupo 1
+            <div class="div3 grupo1">Div3 grupo 1 </div>
+            <div class="div4 grupo1">Div4 grupo 1 </div>
+    </div>
+
+    <div class="div1 grupo2">Div1 grupo 2
+        <div class="div2 grupo2">Div2 grupo 2
+            <div class="div3 grupo2">Div3 grupo 2 </div>
+            <div class="div4 grupo2">Div4 grupo 2 </div>
+    </div>
+</body>
+</html>
