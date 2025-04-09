@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox</title>
+    <style>
+        .flexbox{
+            height: 300px;
+            border: 5px solid blue;
+            margin-bottom: 20px;
+            display:flex;
+            /*flex-wrap: wrap; passou da largura ele quebra a linha, não de maneira resposiva
+            flex-direction: column; /*coloca os itens em uma coluna*/
+        }
+
+        .flexbox div{
+            border: 3px solid green;
+            width: 220px;
+            margin: 20px;
+        }
+
+        .flex-container1{
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .flex-container2{
+            justify-content: space-evenly;
+
+        }
+
+        .flex-container2 div{
+            width: 30px;
+            margin:0px;
+            
+        }
+
+        .flex-container3{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .flex-container3 div{
+            width: 30px;
+            margin:0px;
+        }
+
+        .flex-container4 div{
+            width: 300px;
+        }
+
+        .flex-container4{
+            justify-content: space-evenly;
+            align-items: flex-end;
+            flex-wrap: wrap;
+        }
+</style>
+        
+<body>
+    <div class="flexbox flex-container1">
+        <div class="div1">Item 1</div>
+        <div class="div2">Item 2</div>
+        <div class="div3">Item 3</div>
+        <div class="div4">Item 4</div>
+    </div>
+
+    <div class="flexbox flex-container2">
+        <div class="div1">Item 1</div>
+        <div class="div2">Item 2</div>
+        <div class="div3">Item 3</div>
+        <div class="div4">Item 4</div>
+    </div>
+
+    <div class="flexbox flex-container3">
+        <div class="div1">Item 1</div>
+        <div class="div2">Item 2</div>
+        <div class="div3">Item 3</div>
+        <div class="div4">Item 4</div>
+    </div>
+
+    <div class="flexbox flex-container4">
+        <div class="div1">Item 1</div>
+        <div class="div2">Item 2</div>
+        <div class="div3">Item 3</div>
+        <div class="div4">Item 4</div>
+    </div>
+</body>
+</html>

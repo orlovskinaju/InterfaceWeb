@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>FlexBox</title>
+    <style>
+        /*Main Axis (-) no eixo x, Cross Axis (|) eixo y : isso para Row
+        Main Axis (|) no eixo y, Xross Axis (-) eixo x : isso para Column
+        Reverse inverte a posição (inicio e fim)*/
+        .flexbox{
+            height: 300px;
+            border: 5px solid rgb(75, 156, 125);
+            margin-bottom: 20px;
+            display: flex;
+        }
+        .flexbox div{
+            border: 3px solid rgb(167, 99, 180);
+            width: 160px;
+            margin: 20px;
+        }
+        .flex-container5{
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: row;
+        }
+        .flex-container5 div{
+            width: 40px;
+            height: 40px;
+            background-color: aquamarine;
+        }
+        .flex-container6 div{
+            width: 40px;
+            height: 40px;
+            background-color: rgb(124, 79, 79);
+        }
+        .flex-container6 .div2{
+            flex-basis: 100px;
+        }
+        .flex-container6{
+            justify-content: flex-end;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        .flex-container7 div{
+            flex-basis: 50px;
+            background-color: rgb(164, 113, 212);
+            margin: 0px;
+            flex-grow: 1;
+        }
+        .flex-container7 .div3{
+            background-color: rgb(138, 51, 94);
+            flex-grow: 2;
+        }
+        .flex-container7 .div4{
+            background-color: rgb(209, 95, 49);
+            flex-grow: 3;
+        }
+        .flex-container7{
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .flex-container8 div{
+            flex-basis: 500px;
+            background-color: rgb(177, 216, 114);
+        }
+        .flex-container8 .div3{
+            flex-shrink: 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="flexbox flex-container5">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>
+    <div class="flexbox flex-container6">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>
+    <div class="flexbox flex-container7">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>
+    <div class="flexbox flex-container8">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>
+    <div class="flexbox flex-container9">
+        <div class="div1">Div 1</div>
+        <div class="div2">Div 2</div>
+        <div class="div3">Div 3</div>
+        <div class="div4">Div 4</div>
+    </div>
+    
+</body>
+</html>
