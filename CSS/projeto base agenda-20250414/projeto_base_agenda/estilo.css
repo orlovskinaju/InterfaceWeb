@@ -1,0 +1,77 @@
+html, body{
+    height: 100%;
+}
+
+body {
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    color: #385555;
+}
+
+.list-wrapper{
+    background-color: rgb(246, 241, 241);
+    width: 90%;
+    max-width: 600px;
+    max-height: 600px;
+    overflow-y: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item{
+    display: flex;
+    border-bottom: 1px solid #c0bfbf;
+    padding: 16px;
+}
+
+.list-item:hover{
+    background-color: #c7c7c7;
+}
+
+.list-item__imagem img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.list-item__content{
+    padding: 0 20px;
+    flex-grow: 1;
+}
+
+.list-item__name{
+    font-size: 24px;
+    color: black;
+    margin: 0;
+    padding-top: 5%;
+}
+
+.lis-tem__email{
+    margin: 5px 0 0;
+    color: #aaa;
+}
+
+.list-item__action{
+    gap:20px;
+    align-items: center;
+    opacity: 0;
+    display: flex;
+}
+
+.list-item:hover .list-item__action{
+    opacity: 0.3;
+}
