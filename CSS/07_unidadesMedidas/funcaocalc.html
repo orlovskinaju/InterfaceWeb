@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Função Calc</title>
+    <style>
+        :root{
+            --header-height: 15rem;
+            --main-color: #ccc;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        header{
+            --header-height: 2rem;
+            width: 100%;
+            background-color: rgba(221, 80, 80, 0.3);
+            height: var(--header-height);
+            font-size: 2rem;
+            position: fixed;
+            top:0;
+            left: 0;
+        }
+        main{
+            min-height: calc(100vh - 15rem);
+            background-color: var(--main-color);
+            font-size: 2rem;
+            margin-top: 15rem;
+        }
+        footer{
+            height: 10rem;
+            background-color: rgb(116, 116, 201);
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>main</main>
+    <footer>footer</footer>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Unidades de Medida</title>
+    <style>
+        /*para fonte em ou rem, px é para detalhes como margin etc
+        'em' trabalha com a largura do pai
+        em x rem: são duas medidas relativas, rme ele não pega a medida do pai, pega o do html (padrão/raiz)
+        em tbm pode usar como unidade de medida geral (largura, altura), mas não é comum, p padrão é porcentagem*/
+        html{
+            font-size: 62.5%; /*o padão 'em' 10px e não 16px, essa porcentagem padroniza o 'em' em 10px, mais fácil de fazer contas*/
+        }
+        h1{
+            font-size: 2.4em;
+        }
+        p{
+            font-size: 1.6em;
+        }
+        b{
+            color: rgb(146, 12, 8);
+            font-size: 0.7em; /*rem coloca em relação à raiz, não ao pai*/
+        }
+        .modificado{
+            font-size: 2em;
+            background-color: #ccc;
+            width: 10em;
+        }
+        /*porcentagem sempre vai seguir o elemento pai*/
+        .porcentagem{
+            width: 500%;
+            height: 60%;
+            background-color: rgba(255, 255, 0, 0.747);
+        }
+        .porcentagem p{
+            background-color: transparent;
+            /*padding sempre se refere a largura do elemento pai*/
+            padding: 10%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidades de Medida</h1>
+    <p>
+        Lorem ipsum dolor sit amet <b>consectetur adipisicing elit</b>. Nostrum ducimus alias similique excepturi omnis distinctio quisquam nemo eum veritatis. Nemo quod inventore consectetur quo molestiae reprehenderit ad ea exercitationem omnis.
+    </p>
+    <p class="modificado">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ducimus alias similique excepturi omnis distinctio quisquam nemo eum veritatis. Nemo quod inventore consectetur quo molestiae reprehenderit ad ea exercitationem omnis.
+    </p>
+    <div class="porcentagem">
+        <p>Testando Porcentagem</p>
+    </div>
+    
+</body>
+</html>
