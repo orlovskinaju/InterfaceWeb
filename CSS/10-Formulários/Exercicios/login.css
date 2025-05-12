@@ -1,0 +1,85 @@
+html{
+    background-color: rgb(53, 23, 184);
+    font-family: sans-serif;
+    color: rgb(18, 18, 18);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form{
+    width: 90%;
+    min-width: 25em;
+    max-width: 25em;
+    background-color: rgb(255, 255, 255);   
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    padding: 1em;
+}
+
+fieldset{
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label, input{
+    display:block;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+
+label{
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+input{
+    border-bottom: 2px solid #2641ba;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+legend{
+    color: #2641ba;
+    margin-bottom: 15px;
+    font-size: 1.7em;
+}
+
+.btn{
+    text-transform: uppercase;
+    color:#2641ba;
+    border: none;
+    cursor: pointer;
+    padding: .6em;
+    border-radius: 5px;
+    margin-left: 15px;
+
+}
+.cadastrar{
+    text-decoration: none;
+}
+.btn-login{
+    background-color:#2641ba;
+    text-transform: uppercase;
+    color:white;
+    border: none;
+    padding: .6em;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+p{
+    margin-right: 40px;
+    font-size: .8em;
+}
+.acessar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}

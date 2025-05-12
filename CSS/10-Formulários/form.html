@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+    <style>
+        input{
+            display:block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+        <legend>Introdução</legend>
+        <label for="email">Email</label>
+        <input type="email" name="email" required>
+        <label for="filhos">Quantidade de Filhos</label>
+        <input type="number" name="filhos" min="0" max="100" required> 
+        <input type="submit" value="Entrar" class="btn">
+        </fieldset>
+    </form>
+</body>
+</html>

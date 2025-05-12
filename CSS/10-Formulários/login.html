@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        html{
+            background-color: rgb(147, 158, 168);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        form{
+            width: 400px;
+            background-color: rgb(216, 213, 207);
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px #333;
+        }
+        fieldset{
+            border: none;
+        }
+        input, label{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        label{
+            margin-bottom: .25em;;
+        }
+        input{
+            padding: .75em;
+            border-radius: 5px;
+            border: 1px solid #bbb;
+            margin-bottom: 1.5em;
+            font-size: 1em;
+        }
+        legend{
+            padding: 1em;
+            text-align: center;
+            font-weight: bold;
+            color:#414141;
+            font-size: 1.2em;
+        }
+        .action{
+            display: flex;
+            gap: 1.5em;
+        }
+        .btn , .btn2{
+            color:aliceblue;
+            cursor: pointer;
+        }
+        .btn{
+            background-color: #414141;
+        }
+        .btn2{
+            background-color: rgb(228, 113, 113);
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="#" method="post">
+        <fieldset>
+        <legend>Entre com seus dados</legend>
+        <label for="user">Usuário:</label>
+        <input type="text" id="user" name="user" required autofocus>
+        <label for="pass">Senha:</label>
+        <input type="password" id="pass"required>
+        <div class="action">
+            <input type="reset" value="Limpar" class="btn2">
+             <input type="submit" value="Entrar" class="btn">
+        </div>
+        </fieldset>
+    </form>
+</body>
+</html>
