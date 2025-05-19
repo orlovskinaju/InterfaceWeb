@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo 2</title>
+    <style>
+        input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+        }
+        label span{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: #4d74a9;
+            transform: translate(10px);
+        }
+        input[type="checkbox"]:checked + label span {
+            background-color: rgb(251, 123, 123);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Check Box</h1>
+    <input type="checkbox" id="html">
+    <label for="html"><span>HTML</span></label>
+    <input type="checkbox" id="css">
+    <label for="css"><span>CSS</span></label>
+    <input type="checkbox" id="js">
+    <label for="js"><span>JavaScript</span></label>
+</body>
+</html>

@@ -1,0 +1,38 @@
+:root{
+    --primary-color: #e10f0f;
+}
+
+body {
+    font-family: sans-serif;
+   /* background-image: linear-gradient(to right, transparent 50%, red), url(./imagens/tile.png);*/
+   background-image: linear-gradient(blue, red), url(./imagens/tile.png);
+    background-attachment: fixed;
+    background-blend-mode: color;
+
+}
+
+.cores{
+    width: 80%;
+    border: 8px dashed color-mix( in srgb, var(--primary-color), transparent);
+    background-color: color-mix(in srgb, var(--primary-color), transparent);
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.cores p{
+    margin: 0;
+}
+
+section{
+    counter-reset: contador;
+}
+.cores{
+    counter-increment: contador;
+}
+
+.cores::before{
+    content: "[" counter(contador) "]";
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}

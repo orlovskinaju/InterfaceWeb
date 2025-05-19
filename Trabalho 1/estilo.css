@@ -1,61 +1,68 @@
-
-
-
-body{
+body {
     background-color: rgb(13, 19, 35);
+    font-family: 'Rubik', sans-serif;
+    font-weight: lighter;
+    color: white;
+    margin:0;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 2em;
 }
 
-.header{
+.header {
     width: 100%;
     height: 20vh;
 }
 
-.flexbox{
-    flex-direction: column;
-}
 
-.conteiner1{
+.painel-lateral{
     max-width: 15em;
-    min-height: 12em;
+    min-height: 18em;
     margin-left: 200px;
+    margin-top: 170px;
     background-color: rgb(29, 32, 75);
     border-radius: 20px;
-    justify-content: space-between;
     align-items: center;
     flex-direction: column;
 }
 
-.conteiner1 .profile{
+.profile{
     max-width: 15em;
-    min-height: 12em;
+    height: 9em;
     border-radius: 20px;
     background-color: rgb(87, 70, 234);
     padding: 20px;
-    
     color:white;
     font-size: 1.8em;
 }
 
-.profileImage{
-    width: 2.5em;
-    height: 2.5em;
+.profileImage {
+    width: 3em;
+    height: 3em;
     border: 3px solid white;
     border-radius: 100%;
 }
 
 .for{
     font-size: .6em;
-    margin-top: 60px;;
+    margin-top: 30px;;
 }
 .name{
     margin-top:0;
+    font-weight: lighter;
 }
 
 .options{
    list-style-type: none;
+  
+
 }
 li{
     margin-top: 15px;
+    padding: 5px;
 }
 a{
     text-decoration: none;
@@ -64,4 +71,93 @@ a{
 }
 a:hover{
     color:rgb(192, 193, 211);
+}
+
+.painel-principal {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.linha-cima, .linha-baixo {
+    padding-left: 10em;
+    display: flex;
+    gap: 2em;
+}
+
+.cartao {
+    width: 12em;
+    border-radius: 1em;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.topo-cartao {
+    height: 2em;
+    position: relative;
+}
+
+.icone-fundo {
+    position: absolute;
+    top: -1em;
+    right: 1em;
+    width: 3em;
+    opacity: 0.5;
+}
+
+.conteudo-cartao {
+    padding: 1.5em;
+    background-color: rgb(29, 32, 75);
+    border-radius: 0 0 1em 1em;
+}
+
+.linha-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.linha-titulo span {
+    font-weight: 400;
+}
+
+.tres-pontos {
+    width: 1em;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+.cartao p {
+    font-size: 0.8em;
+    color: rgb(170, 170, 200);
+}
+
+.fundo-laranja {
+    background-color: rgb(255, 143, 112); 
+}
+
+.fundo-verde {
+    background-color: rgb(75, 207, 131); 
+}
+
+.fundo-azul {
+    background-color: rgb(86, 194, 230);
+}
+
+.fundo-vermelho {
+    background-color: rgb(255, 101, 132);
+}
+
+.fundo-roxo {
+    background-color: rgb(114, 53, 209);
+}
+
+.fundo-amarelo {
+    background-color: rgb(254, 211, 102);
 }
