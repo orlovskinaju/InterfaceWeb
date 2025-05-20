@@ -1,70 +1,71 @@
 body {
-    background-color: rgb(13, 19, 35);
-    font-family: 'Rubik', sans-serif;
-    font-weight: lighter;
-    color: white;
-    margin:0;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    gap: 2em;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  background-color: #0f1424;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.header {
-    width: 100%;
-    height: 20vh;
+.painel {
+  display: grid;
+  grid-template-columns: 220px auto; 
+  gap: 2rem;
+  padding: 2rem;
+  align-items: stretch;
+}
+
+.card-perfil {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1c1f4a;
+  border-radius: 1rem;
+  overflow: hidden;
+  height: calc(200px * 2 + 1.5rem); 
+  border-radius: 20px;
+}
+
+/* Parte superior do card de perfil */
+.card-perfil .user-section {
+  background-color: #5746ea;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  flex-grow: 1;
+  border-radius: 20px;
+}
+
+/* Imagem de perfil */
+.card-perfil .profile-pic img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin-bottom: 1.5rem;
+}
+
+/* Texto dentro do perfil */
+.card-perfil .report-for {
+  color: #bbc0ff;
+  font-size: 0.9rem;
+}
+
+.card-perfil .username {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: white;
+  line-height: 1.2;
 }
 
 
-.painel-lateral{
-    max-width: 15em;
-    min-height: 18em;
-    margin-left: 200px;
-    margin-top: 170px;
-    background-color: rgb(29, 32, 75);
-    border-radius: 20px;
-    align-items: center;
-    flex-direction: column;
-}
-
-.profile{
-    max-width: 15em;
-    height: 9em;
-    border-radius: 20px;
-    background-color: rgb(87, 70, 234);
-    padding: 20px;
-    color:white;
-    font-size: 1.8em;
-}
-
-.profileImage {
-    width: 3em;
-    height: 3em;
-    border: 3px solid white;
-    border-radius: 100%;
-}
-
-.for{
-    font-size: .6em;
-    margin-top: 30px;;
-}
-.name{
-    margin-top:0;
-    font-weight: lighter;
-}
-
-.options{
-   list-style-type: none;
-  
-
-}
-li{
-    margin-top: 15px;
-    padding: 5px;
-}
-a{
+ a{
     text-decoration: none;
     color:rgb(97, 97, 145);
     
@@ -73,91 +74,71 @@ a:hover{
     color:rgb(192, 193, 211);
 }
 
-.painel-principal {
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
+.card-perfil .menu {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1rem;
+  font-size: 1rem;
+  color: #a0a3d5;
 }
 
-.linha-cima, .linha-baixo {
-    padding-left: 10em;
-    display: flex;
-    gap: 2em;
+.card-perfil .menu .active {
+  color: white;
 }
 
-.cartao {
-    width: 12em;
-    border-radius: 1em;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+.cards-atividades {
+  display: grid;
+  grid-template-columns: 220px 220px 220px;
+  grid-auto-rows: 200px;
+  gap: 1.5rem;
 }
 
-.topo-cartao {
-    height: 2em;
-    position: relative;
+.card-item {
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  color: white;
 }
 
-.icone-fundo {
-    position: absolute;
-    top: -1em;
-    right: 1em;
-    width: 3em;
-    opacity: 0.5;
+.card-item .icon {
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: right 15px top 10px;
 }
 
-.conteudo-cartao {
-    padding: 1.5em;
-    background-color: rgb(29, 32, 75);
-    border-radius: 0 0 1em 1em;
+.card-item .content {
+  background-color: #1c1f4a;
+  border-radius: 15px;
+  padding: 1.5rem;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-.linha-titulo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 0.5em;
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
-.linha-titulo span {
-    font-weight: 400;
+.hours {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
 }
 
-.tres-pontos {
-    width: 1em;
+.previous {
+  font-size: 0.8rem;
+  color: #bbc0ff;
 }
 
-h2 {
-    font-weight: 300;
-    font-size: 2em;
-    margin: 0.5em 0;
-}
-
-.cartao p {
-    font-size: 0.8em;
-    color: rgb(170, 170, 200);
-}
-
-.fundo-laranja {
-    background-color: rgb(255, 143, 112); 
-}
-
-.fundo-verde {
-    background-color: rgb(75, 207, 131); 
-}
-
-.fundo-azul {
-    background-color: rgb(86, 194, 230);
-}
-
-.fundo-vermelho {
-    background-color: rgb(255, 101, 132);
-}
-
-.fundo-roxo {
-    background-color: rgb(114, 53, 209);
-}
-
-.fundo-amarelo {
-    background-color: rgb(254, 211, 102);
-}
+.cor1 .icon { background-color: #ff8b64; }
+.cor2 .icon { background-color: #56c2e6; }
+.cor3 .icon { background-color: #ff5e7d; }
+.cor4 .icon { background-color: #4acf81; }
+.cor5 .icon { background-color: #7536d3; }
+.cor6 .icon { background-color: #f1c75b; }

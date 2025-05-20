@@ -1,116 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <title>Trabalho 1</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Time Tracking Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="painel-lateral">
-        <div class="profile">
-            <img src="./imagens/image-jeremy.png" alt="Imagem de perfil" class="profileImage">
-            <p class="for">Reported for</p>
-            <h1 class="name">Jeremy Robson</h1>
+  <main class="painel">
+
+    <section class="card-perfil">
+      <div class="user-section">
+        <div class="profile-pic">
+          <img src="imagens/image-jeremy.png" alt="Jeremy Robson">
         </div>
-        <ul class="options">
-            <li><a href="#">Daily</a></li>
-            <li><a href="#" style="color: white;">Weekly</a></li>
-            <li><a href="#">Monthly</a></li>
-        </ul>
-        </nav>
-    </header>
-    <main class="painel-principal">
-        <section class="linha-cima">
-            <div class="cartao fundo-laranja">
-                <div class="topo-cartao">
-                    <img src="./imagens/mala.svg" class="icone-fundo">
-                </div>
-                <div class="conteudo-cartao">
-                    <div class="linha-titulo">
-                        <span>Work</span>
-                        <img src="./imagens/3pontos.svg" class="tres-pontos">
-                    </div>
-                    <h2>32hrs</h2>
-                    <p>Last Week - 36hrs</p>
-                </div>
-            </div>
+        <div class="report-for">Report for</div>
+        <div class="username">Jeremy Robson</div>
+      </div>
+      <div class="menu">
+        <div><a href="#">Daily</a></div>
+        <div class="active"> <a href="#" ></a>Weekly</div>
+        <div><a href="#">Monthly</a></div>
+      </div>
+    </section>
 
-            <div class="cartao fundo-azul">
-                <div class="topo-cartao">
-                    <img src="./imagens/controle.svg" class="icone-fundo">
-                </div>
-                <div class="conteudo-cartao">
-                    <div class="linha-titulo">
-                        <span>Play</span>
-                        <img src="./imagens/3pontos.svg" class="tres-pontos">
-                    </div>
-                    <h2>10hrs</h2>
-                    <p>Last Week - 8hrs</p>
-                </div>
-            </div>
+    <section class="cards-atividades">
+      <div class="card-item cor1">
+        <div class="icon" style="background-image: url('imagens/mala.svg');"></div>
+        <div class="content">
+          <div class="header">
+            <span>Work</span>
+            <span>...</span>
+          </div>
+          <div class="hours">32hrs</div>
+          <div class="previous">Last Week - 36hrs</div>
+        </div>
+      </div>
 
-            <div class="cartao fundo-vermelho">
-                <div class="topo-cartao">
-                    <img src="./imagens/livro.svg" class="icone-fundo">
-                </div>
-                <div class="conteudo-cartao">
-                    <div class="linha-titulo">
-                        <span>Study</span>
-                        <img src="./imagens/3pontos.svg" class="tres-pontos">
-                    </div>
-                    <h2>4hrs</h2>
-                    <p>Last Week - 7hrs</p>
-                </div>
-            </div>
-        </section>
+      <div class="card-item cor2">
+        <div class="icon" style="background-image: url('imagens/controle.svg');"></div>
+        <div class="content">
+          <div class="header">
+            <span>Play</span>
+            <span>...</span>
+          </div>
+          <div class="hours">10hrs</div>
+          <div class="previous">Last Week - 8hrs</div>
+        </div>
+      </div>
 
-        <section class="linha-baixo">
-            <div class="cartao fundo-verde">
-                <div class="topo-cartao">
-                    <img src="./imagens/boneco.svg" class="icone-fundo">
-                </div>
-                <div class="conteudo-cartao">
-                    <div class="linha-titulo">
-                        <span>Exercise</span>
-                        <img src="./imagens/3pontos.svg" class="tres-pontos">
-                    </div>
-                    <h2>4hrs</h2>
-                    <p>Last Week - 5hrs</p>
-                </div>
-            </div>
+      <div class="card-item cor3">
+        <div class="icon" style="background-image: url('imagens/livro.svg');"></div>
+        <div class="content">
+          <div class="header">
+            <span>Study</span>
+            <span>...</span>
+          </div>
+          <div class="hours">4hrs</div>
+          <div class="previous">Last Week - 7hrs</div>
+        </div>
+      </div>
 
-            <div class="cartao fundo-roxo">
-                <div class="topo-cartao">
-                    <img src="./imagens/balao.svg" class="icone-fundo">
-                </div>
-                <div class="conteudo-cartao">
-                    <div class="linha-titulo">
-                        <span>Social</span>
-                        <img src="./imagens/3pontos.svg" class="tres-pontos">
-                    </div>
-                    <h2>5hrs</h2>
-                    <p>Last Week - 10hrs</p>
-                </div>
-            </div>
+      <div class="card-item cor4">
+        <div class="icon" style="background-image: url('imagens/boneco.svg');"></div>
+        <div class="content">
+          <div class="header">
+            <span>Exercise</span>
+            <span>...</span>
+          </div>
+          <div class="hours">4hrs</div>
+          <div class="previous">Last Week - 5hrs</div>
+        </div>
+      </div>
 
-            <div class="cartao fundo-amarelo">
-                <div class="topo-cartao">
-                    <img src="./imagens/coracao.svg" class="icone-fundo">
-                </div>
-                <div class="conteudo-cartao">
-                    <div class="linha-titulo">
-                        <span>Self Care</span>
-                        <img src="./imagens/3pontos.svg" class="tres-pontos">
-                    </div>
-                    <h2>2hrs</h2>
-                    <p>Last Week - 2hrs</p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <aside></aside>
-    <footer></footer>
+      <div class="card-item cor5">
+        <div class="icon" style="background-image: url('imagens/balao.svg');"></div>
+        <div class="content">
+          <div class="header">
+            <span>Social</span>
+            <span>...</span>
+          </div>
+          <div class="hours">5hrs</div>
+          <div class="previous">Last Week - 10hrs</div>
+        </div>
+      </div>
+
+      <div class="card-item cor6">
+        <div class="icon" style="background-image: url('imagens/coracao.svg');"></div>
+        <div class="content">
+          <div class="header">
+            <span>Self Care</span>
+            <span>...</span>
+          </div>
+          <div class="hours">2hrs</div>
+          <div class="previous">Last Week - 2hrs</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
 </body>
 </html>
