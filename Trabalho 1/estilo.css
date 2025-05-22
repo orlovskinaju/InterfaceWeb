@@ -11,11 +11,11 @@ body {
 }
 
 .painel {
-  display: grid;
-  grid-template-columns: 220px auto; 
-  gap: 2rem;
+  display: flex;
+  gap: 1rem;
   padding: 2rem;
   align-items: stretch;
+  flex-wrap: wrap;
 }
 
 .card-perfil {
@@ -25,7 +25,8 @@ body {
   background-color: #1c1f4a;
   border-radius: 1rem;
   overflow: hidden;
-  height: calc(200px * 2 + 1.5rem); 
+  max-height: 450px;
+  width: 220px;
   border-radius: 20px;
 }
 
@@ -35,7 +36,7 @@ body {
   padding: 2rem 1.5rem;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   flex-grow: 1;
   border-radius: 20px;
@@ -46,9 +47,9 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  object-fit: cover;
   border: 2px solid white;
   margin-bottom: 1.5rem;
+  background-color: white;
 }
 
 /* Texto dentro do perfil */
@@ -61,19 +62,10 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   color: white;
-  line-height: 1.2;
+  margin-top: 5px;
 }
 
-
- a{
-    text-decoration: none;
-    color:rgb(97, 97, 145);
-    
-}
-a:hover{
-    color:rgb(192, 193, 211);
-}
-
+/* Menu */
 .card-perfil .menu {
   display: flex;
   flex-direction: column;
@@ -87,14 +79,19 @@ a:hover{
   color: white;
 }
 
+/* Cartões de atividades */
 .cards-atividades {
-  display: grid;
-  grid-template-columns: 220px 220px 220px;
-  grid-auto-rows: 200px;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.5rem;
+  justify-content: center; /* <- alinhamento mais garantido */
+  width: 720px; /* 3 cards de 220px + 2 espaços de 1.5rem (24px) */
+  height: 450px;
 }
 
 .card-item {
+  width: 220px;
+  height: 220px;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
@@ -107,15 +104,18 @@ a:hover{
   background-position: right 15px top 10px;
 }
 
+
 .card-item .content {
   background-color: #1c1f4a;
+  min-height: 120px;
   border-radius: 15px;
   padding: 1.5rem;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  margin-top: -20px;
+  z-index: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
