@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundHub | Plataforma para Criadores</title>
+    <link rel="stylesheet" href="assets/CSS/index.css">
+</head>
+<body>
+    <!-- Cabeçalho com Menu -->
+    <header class="header" id="header">
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="assets/imgs/logo.png" alt="SoundHub Logo" class="logo">
+                <span class="logo-text">SoundHub</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="recursos.html" class="nav-link">Recursos</a></li>
+                <li><a href="planos.html" class="nav-link">Planos</a></li>
+            </ul>
+              <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main com Chamada Principal -->
+    <main class="main">
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Liberte sua <span class="highlight">criatividade</span></h1>
+                <p class="hero-subtitle">A plataforma definitiva para artistas independentes distribuirem sua música.</p>
+                <button href="planos.html" class="cta-button" id="ctaButton">Comece agora</button>
+            </div>
+            <div class="hero-image">
+                <img src="assets/imgs/hero-image.jpg" alt="Artista produzindo música" class="hero-img">
+            </div>
+        </section>
+
+        <!-- Seção de Benefícios -->
+        <section class="benefits" id="benefits">
+            <h2 class="section-title">Por que escolher o SoundHub?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon"><img src="assets/imgs/music.png" class="music-image"></div>
+                    <h3 class="benefit-title">Distribuição global</h3>
+                    <p class="benefit-text">Disponível em todas as plataformas de streaming.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><img src="assets/imgs/money.png" class="money-image"></div>
+                    <h3 class="benefit-title">Royalties justos</h3>
+                    <p class="benefit-text">Receba 85% dos seus lucros diretamente.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon"><img src="assets/imgs/graficos.png" class="graficos-image"></div>
+                    <h3 class="benefit-title">Analytics detalhados</h3>
+                    <p class="benefit-text">Acompanhe seu crescimento em tempo real.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Depoimentos -->
+        <section class="testimonials">
+            <h2 class="section-title">O que dizem nossos artistas</h2>
+            <div class="testimonials-slider" id="testimonialsSlider">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Alcancei 1 milhão de streams em 3 meses!"</p>
+                    <p class="testimonial-author">- Maria, cantora independente</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Finalmente uma plataforma que valoriza o artista."</p>
+                    <p class="testimonial-author">- João, produtor musical</p>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="slider-prev" id="prevTestimonial">❮</button>
+                <button class="slider-next" id="nextTestimonial">❯</button>
+            </div>
+        </section>
+
+        <!-- Seção CTA com Formulário -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2 class="cta-title">Pronto para transformar sua carreira?</h2>
+                <form class="cta-form" id="ctaForm">
+                    <div class="form-group">
+                        <input type="email" id="ctaEmail" class="form-input" placeholder="Seu melhor e-mail" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+                    <button type="submit" class="form-button">Quero me cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/imgs/logo-branca.png" alt="SoundHub Logo" class="footer-logo">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4 class="footer-title">SoundHub</h4>
+                    <a href="#" class="footer-link">Sobre nós</a>
+                    <a href="#" class="footer-link">Carreiras</a>
+                    <a href="#" class="footer-link">Blog</a>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-title">Legal</h4>
+                    <a href="#" class="footer-link">Termos de uso</a>
+                    <a href="#" class="footer-link">Política de privacidade</a>
+                    <a href="#" class="footer-link">Cookies</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">© 2025 SoundHub. Todos os direitos reservados.</p>
+            <div class="theme-toggle" id="themeToggle">
+                <span class="theme-icon"><img src="assets/imgs/moon.png" class="modo-escuro"></span>
+                <span class="theme-text">Alternar tema</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/JS/index.js"></script>
+</body>
+</html>
